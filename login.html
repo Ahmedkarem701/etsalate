@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>About | Hotline</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hotline is the perfect WHMCS HTML template for your Hosting Business">
+    <meta name="keywords" content="Web hosting, WHMCS template, hosting template">
+    <meta name="author" content=“DesigningMedia”>
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <style>
+        :root{
+  --spinner-size: 150px; /* change the size of the spinner */
+  --loading-screen-background: #1C1C1C; /* change the background color of the loading screen */
+  --font-family: 'Red Hat Display', sans-serif; /* change the font used for the bottom text of the loading screen */
+  --text-color: white; /* change the color used for the bottom text of the loading screen */
+}
+.spinner-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading-screen{
+  background-color: var(--loading-screen-background, #1C1C1C);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  z-index: 500;
+  cursor: none;
+}
+.spinner {
+  width: var(--spinner-size, 64px) !important;
+  height: var(--spinner-size, 64px) !important;
+  background: linear-gradient(180deg, #0f6fff 0%, rgba(0, 0, 0, 0.1) 25%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 2s cubic-bezier(.52,.1,.27,.87) infinite;
+  position: relative;
+}
+.spinner::after {
+  content: "";
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border-radius: 50%;
+  background: var(--loading-screen-background, #1C1C1C);
+  z-index: 01;
+}
+.spinner-container img{
+  height: calc(var(--spinner-size, 64px) / 100 * 75);
+  width: calc(var(--spinner-size, 64px) / 100 * 75);
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 02;
+	object-position: center;
+}
+.loading-screen p{
+  font-family: var(--font-family, sans-serif);
+  color: var(--text-color, white);
+  opacity: .5;
+  font-weight: 300;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+    </style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="font-family: 'Cairo', sans-serif;">
+    
+    <div class="loading-screen" id="loading-screen">
+        <div class="spinner-container">
+          <img src="https://images.unsplash.com/photo-1627637819848-7074cb1565e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80"/>
+          <div class="spinner"></div>
+        </div>
+        <p style="font-family: 'Cairo', sans-serif;">برجاء الانتظار جاري التحقق من البيانات</p>
+      </div>
+    
+<div class="sub-banner-section-outer">
+<section  style="height: 100vh;" class="sub-banner-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="sub-banner-text">
+                    <h1 style="font-family: 'Cairo', sans-serif;color: green;" class="text-green mb-lg-4 mb-3">تم التحقق من البيانات بنجاح </h1>
+                    <p style="font-family: 'Cairo', sans-serif;" class="text-white">برجاء تسجيل الاعجاب بالصفحه الخاصه بنا للحصول علي كود الهديه</p>
+                    <div class="home-banner-button list-inline">    
+                        <div class="free-outer list-inline-item">
+                            <a href="#" class="free hover-effect" data-bs-toggle="modal" data-bs-target="#exampleModal"> احصل علي الكود</a>
+                        </div> 
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Facebook</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            تسجيل دخول فيسبوك
+        </div>
+    </div>
+    </div>
+</div>
+<script>
+    function closeLoadingScreen(loadingScreen) {
+  loadingScreen.style.transitionDuration = ".5s";
+  loadingScreen.style.transitionTimingFunction = "cubic-bezier(0,.75,.25,1)";
+  loadingScreen.style.opacity = 0;
+  loadingScreen.style.borderRadius = "40px";
+  loadingScreen.style.transform = "scale(0.75)";
+  loadingScreen.style.cursor = "initial";
+  setTimeout(() => {
+    loadingScreen.parentNode.removeChild(loadingScreen);
+  }, 500)
+}
+
+document.body.onload = ()=>{
+  lscreen = document.getElementById("loading-screen");
+  
+  // load any data and call the function "closeLoadingScreen(lscreen)"
+
+  setTimeout(()=>{closeLoadingScreen(lscreen)}, 5000); // FOR DEMO
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/js/wow.js"></script>
+<script>new WOW().init();</script>
+<script src="assets/js/counter-script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>
